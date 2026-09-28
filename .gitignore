@@ -1,0 +1,21 @@
+# Virtual environment & caches
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Intermediate training checkpoints & large weights
+distilled-student-checkpoint/
+distilled-student-final/
+onnx_distilled_model/
+*.onnx
+*.onnx.data
+*.pt
+*.pth
+*.safetensors
+*.bin
+
+# Keep only the final quantized deployment model folder
+!onnx_quantized_model/
+!onnx_quantized_model/*
+!onnx_quantized_model/*.onnx
